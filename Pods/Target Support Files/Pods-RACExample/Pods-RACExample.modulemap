@@ -1,0 +1,6 @@
+framework module Pods_RACExample {
+  umbrella header "Pods-RACExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
