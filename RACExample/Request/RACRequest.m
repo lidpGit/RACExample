@@ -8,7 +8,7 @@
 
 #import "RACRequest.h"
 
-NSString *const api_domain = @"http://www.delizt.com/wy/";
+NSString *const api_domain = @"";
 
 @implementation RACRequest
 
