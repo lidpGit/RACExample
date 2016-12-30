@@ -69,8 +69,12 @@ static NSString *const cell_id = @"RootViewCell";
                     @{@"t":@"concat", @"c":@"ConcatViewController", @"d":@"连接信号，当前信号执行完之后才能执行下一个信号（可以用来当串行队列）"},
                     @{@"t":@"then", @"c":@"ThenViewController", @"d":@"类似concat"},
                     @{@"t":@"lift", @"c":@"LiftViewController", @"d":@"场景：需要获取多个请求的数据统一更新UI"},
-                    @{@"t":@"timer", @"c":@"TimerViewController", @"d":@"定时、超时、延迟"},];
+                    @{@"t":@"timer", @"c":@"TimerViewController", @"d":@"定时、超时、延迟，ScrollView滚动时不会影响计时"},
+                    @{@"t":@"retry", @"c":@"RetryViewController", @"d":@"当信号发出error时，可以重新执行信号"},
+                    @{@"t":@"bind", @"c":@"BindViewController", @"d":@"给RAC中的信号进行绑定，只要信号一发送数据就能监听到，从而把发送数据改成自己想要的数据"},
+                    @{@"t":@"map、flattenMap", @"c":@"MapViewController", @"d":@"用于把源信号内容映射成新的内容\n\nmap作用:把源信号的值映射成一个新的值\n\nflattenMap作用:用于信号中信号,把源信号的内容映射成一个新的信号,信号可以是任意类型"},];
     
+    self.tableView.showsVerticalScrollIndicator = YES;
     [self.tableView registerClass:RootViewCell.class forCellReuseIdentifier:cell_id];
     self.tableView.setTableFooterView(DPView());
     [self.tableView reloadData];

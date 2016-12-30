@@ -48,6 +48,9 @@
 		6AE160491E112CD800E223FB /* ConcatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE160481E112CD800E223FB /* ConcatViewController.m */; };
 		6AE1604C1E112E3700E223FB /* LiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE1604B1E112E3700E223FB /* LiftViewController.m */; };
 		6AE160501E112FDC00E223FB /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE1604F1E112FDC00E223FB /* TimerViewController.m */; };
+		6AEA412C1E16184D003ED2FB /* RetryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA412B1E16184D003ED2FB /* RetryViewController.m */; };
+		6AEA41301E163087003ED2FB /* BindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA412F1E163087003ED2FB /* BindViewController.m */; };
+		6AEA41341E16348F003ED2FB /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA41331E16348F003ED2FB /* MapViewController.m */; };
 		B1CD6AF722C84CFCA20AF9AE /* Pods_RACExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB879DC6A180FD4876555A0D /* Pods_RACExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +149,12 @@
 		6AE1604B1E112E3700E223FB /* LiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiftViewController.m; sourceTree = "<group>"; };
 		6AE1604E1E112FDC00E223FB /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		6AE1604F1E112FDC00E223FB /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		6AEA412A1E16184D003ED2FB /* RetryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetryViewController.h; sourceTree = "<group>"; };
+		6AEA412B1E16184D003ED2FB /* RetryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetryViewController.m; sourceTree = "<group>"; };
+		6AEA412E1E163087003ED2FB /* BindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindViewController.h; sourceTree = "<group>"; };
+		6AEA412F1E163087003ED2FB /* BindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindViewController.m; sourceTree = "<group>"; };
+		6AEA41321E16348F003ED2FB /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		6AEA41331E16348F003ED2FB /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		906FD2E4F92E8C6EC56E8CE1 /* Pods-RACExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACExample/Pods-RACExample.debug.xcconfig"; sourceTree = "<group>"; };
 		FB879DC6A180FD4876555A0D /* Pods_RACExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RACExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -253,6 +262,9 @@
 				6A754A931E10EAC600A0FB08 /* Event&Observer */,
 				6A754A961E10EAC600A0FB08 /* GroupSignal */,
 				6AE1604D1E112FD200E223FB /* Timer */,
+				6AEA41291E16180E003ED2FB /* Retry */,
+				6AEA412D1E163077003ED2FB /* Bind */,
+				6AEA41311E16345F003ED2FB /* Map */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -371,6 +383,33 @@
 				6AE1604F1E112FDC00E223FB /* TimerViewController.m */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		6AEA41291E16180E003ED2FB /* Retry */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA412A1E16184D003ED2FB /* RetryViewController.h */,
+				6AEA412B1E16184D003ED2FB /* RetryViewController.m */,
+			);
+			path = Retry;
+			sourceTree = "<group>";
+		};
+		6AEA412D1E163077003ED2FB /* Bind */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA412E1E163087003ED2FB /* BindViewController.h */,
+				6AEA412F1E163087003ED2FB /* BindViewController.m */,
+			);
+			path = Bind;
+			sourceTree = "<group>";
+		};
+		6AEA41311E16345F003ED2FB /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA41321E16348F003ED2FB /* MapViewController.h */,
+				6AEA41331E16348F003ED2FB /* MapViewController.m */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -543,6 +582,7 @@
 				6A754AE41E10EAC600A0FB08 /* UINavigationBar+DPMethodExt.m in Sources */,
 				6A754AD71E10EAC600A0FB08 /* LoginViewController.m in Sources */,
 				6AE160461E1129CE00E223FB /* ThenViewController.m in Sources */,
+				6AEA41301E163087003ED2FB /* BindViewController.m in Sources */,
 				6A754AED1E10EAC600A0FB08 /* UITableView+DPMethodExt.m in Sources */,
 				6A6E3D031E10ED7E00AF632B /* ENOViewController.m in Sources */,
 				6A754ADB1E10EAC600A0FB08 /* RootViewController.m in Sources */,
@@ -551,6 +591,8 @@
 				6AE1604C1E112E3700E223FB /* LiftViewController.m in Sources */,
 				6A754A711E10E9D400A0FB08 /* AppDelegate.m in Sources */,
 				6A754AE91E10EAC600A0FB08 /* UIScrollView+DPMethodExt.m in Sources */,
+				6AEA412C1E16184D003ED2FB /* RetryViewController.m in Sources */,
+				6AEA41341E16348F003ED2FB /* MapViewController.m in Sources */,
 				6A754AD81E10EAC600A0FB08 /* LoginViewModel.m in Sources */,
 				6AE160491E112CD800E223FB /* ConcatViewController.m in Sources */,
 				6A754AE61E10EAC600A0FB08 /* UIPickerView+DPMethodExt.m in Sources */,

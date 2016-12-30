@@ -7,7 +7,6 @@
 //
 
 #import "ENOViewController.h"
-#import <ReactiveCocoa/RACReturnSignal.h>
 
 @interface ENOViewController ()
 
@@ -47,16 +46,8 @@
     }];
     
     //监听文本框值改变
-//    [tf.rac_textSignal subscribeNext:^(id x) {
-//        //x为当前文本框的text
-//        NSLog(@"%@", x);
-//    }];
-    
-    [[tf.rac_textSignal bind:^RACStreamBindBlock{
-        return ^RACStream *(id value, BOOL *stop){
-            return [RACReturnSignal return:[NSString stringWithFormat:@"log:%@", value]];
-        };
-    }] subscribeNext:^(id x) {
+    [tf.rac_textSignal subscribeNext:^(id x) {
+        //x为当前文本框的text
         NSLog(@"%@", x);
     }];
     
